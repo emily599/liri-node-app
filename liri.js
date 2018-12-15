@@ -1,4 +1,4 @@
-require("dotenv").config();
+// require("dotenv").config();
 var keys = require("./keys.js");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
@@ -8,7 +8,6 @@ var request = require("request");
 var moment = require("moment");
 var nodeArgs = process.argv;
 var artist = "";
-
 
 if (process.argv[2] === "concert-this") {
     concertThis();
